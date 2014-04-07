@@ -71,7 +71,7 @@ def make_trie(words):
 def SolveAlienLang(in_file, out_file):
     with open(out_file, "w") as out_data:
         with open(in_file, "r") as in_data:
-            w_len, n_words, N = map(lambda x: int(x), in_data.readline().split(" "))
+            w_len, n_words, N = map(int, in_data.readline().split())
             words = set()
 
             for _ in xrange(n_words):

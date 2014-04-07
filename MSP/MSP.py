@@ -13,8 +13,8 @@ def SolveMsp(in_file, out_file):
             T = int(in_data.readline())
             for x in xrange(T):
                 v_len = int(in_data.readline())
-                v1 = map(lambda x: int(x), in_data.readline().split(" "))
-                v2 = map(lambda x: int(x), in_data.readline().split(" "))
+                v1 = map(int, in_data.readline().split())
+                v2 = map(int, in_data.readline().split())
 
                 r = "Case #%d: %d\n"%(x+1, do_msp(v1, v2))
 
