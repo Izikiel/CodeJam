@@ -1,5 +1,6 @@
 .idea
 *.pyc
+out_*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
